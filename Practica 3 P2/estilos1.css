@@ -7,7 +7,7 @@ table{
 	margin: auto;
 	border: 1px solid lightgreen;
 	border-collapse: collapse;
-	caption-side: bottom; /*top o bottom*/
+	caption-side: top; /*top o bottom*/
 	}
 
 th,td{
