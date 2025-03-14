@@ -1,0 +1,30 @@
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 20%;
+}
+
+li a{
+	display: block;
+	background-color: lightgreen;
+	padding: 8px 10px;
+	text-decoration: none;
+	color: white;
+}
+
+li a:hover{
+	background-color: green;
+	color: white;
+
+}
+
+li a.activo{
+	background-color: purple;
+	color: lightgreen;
+}
+
+li a:hover:not(.activo){
+	background-color: skyblue;
+	color: white;
+}
