@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="P2.css">
+	<title>182658 - Examen Práctico Parcial 2</title>
+</head>
+<body>
+	<h1>Examen práctico Parcial 2</h1>
+	<h2>Nombre del alumno(a): Francisco Diaz Medina</h2>
+
+	<button onmouseover="ocultar()" onmouseout="mostrar()" id="mostrar">Galería de imágenes</button>
+
+	<div class="galeria" id="galeria">
+		<div class="imagen">
+			<a href="image/1.png"><img src="image/1.png" alt="Imagen 1"></a>
+		</div>
+		<div class="imagen">
+			<a href="image/2.png"><img src="image/2.png" alt="Imagen 2"></a>
+		</div>
+		<div class="imagen">
+			<a href="image/3.png"><img src="image/3.png" alt="Imagen 3"></a>
+		</div>
+		<div class="imagen">
+			<a href="image/4.png"><img src="image/4.png" alt="Imagen 4"></a>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		function ocultar() {
+			document.getElementById("galeria").style.visibility = "hidden";
+		}
+
+		function mostrar() {
+			document.getElementById("galeria").style.visibility = "visible";
+		}
+	</script>
+
+</body>
+</html>
