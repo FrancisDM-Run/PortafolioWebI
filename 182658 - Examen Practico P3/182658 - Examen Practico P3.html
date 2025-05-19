@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="CalculoEstilos.css">
+    <title>182658 - Evaluación práctica P3</title>
+    <script type="text/javascript" src="function.js"></script>
+</head>
+<body>
+    <h1>Calcula tu Propina</h1>
+    <form name="formulario">
+        <label for="subtotal">Total a pagar:</label><br/>
+        <input type="number" name="subtotal" id="subtotal" required><br><br>
+
+        <label for="porcentaje">Porcentaje a aplicar:</label><br/>
+        <input list="porcentajes" name="porcentaje" id="porcentaje" required>
+        <datalist id="porcentajes">
+            <option value="5">
+            <option value="10">
+            <option value="15">
+            <option value="20">
+        </datalist><br><br>
+
+        <input type="button" value="Realizar el Cálculo" onclick="calcularPropina()">
+    </form>
+    <div id="resultado"></div>
+</body>
+</html>
